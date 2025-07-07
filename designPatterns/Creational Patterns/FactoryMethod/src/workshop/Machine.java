@@ -2,66 +2,34 @@ package workshop;
 
 import objects.Object;
 
-/**
- * 
- */
 public abstract class Machine {
 
-    /**
-     * Default constructor
-     */
-    public Machine() {
-    }
 
-    /**
-     * 
-     */
     protected double spTez;
 
-    /**
-     * 
-     */
-    protected int maked;
+    protected int maked = 0;
 
+    public Machine() {}
 
-    /**
-     * @param s
-     */
     protected Machine(double s) {
-        // TODO implement here
+       this.spTez = s;
     }
 
-    /**
-     * @return
-     */
     public abstract char type();
 
-    /**
-     * @return
-     */
     public int maked() {
-        // TODO implement here
-        return 0;
+        this.maked++;
+        return maked;
     }
 
-    /**
-     * @return
-     */
     public double getSpTez() {
-        // TODO implement here
-        return 0.0d;
+        return this.spTez;
     }
 
-    /**
-     * @param s
-     */
     public void setSpTez(double s) {
-        // TODO implement here
+       this.spTez = s;
     }
 
-    /**
-     * @return
-     */
     public abstract Object make();
 
 }

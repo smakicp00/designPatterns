@@ -3,7 +3,7 @@ package workshop;
 /**
  * 
  */
-public class NoMachine {
+public class NoMachine extends Throwable {
 
     /**
      * Default constructor

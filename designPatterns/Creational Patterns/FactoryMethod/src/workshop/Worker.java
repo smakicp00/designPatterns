@@ -1,103 +1,49 @@
 package workshop;
 
-/**
- * 
- */
 public class Worker {
 
-    /**
-     * Default constructor
-     */
-    public Worker() {
-    }
-
-    /**
-     * 
-     */
     private int lastId;
 
-    /**
-     * 
-     */
-    private int id;
+    private int id = ++lastId;
 
-    /**
-     * 
-     */
     private String name;
 
-    /**
-     * 
-     */
-    public id maked;
-
-    /**
-     * 
-     */
+    public int maked;
     private Machine machine;
 
-    /**
-     * @param name
-     */
-    public Worker(string name) {
-        // TODO implement here
+    public Worker() {}
+
+    public Worker(String name) {
+        this.name = name;
     }
 
-    /**
-     * @return
-     */
     public int id() {
-        // TODO implement here
-        return 0;
+        return this.id;
     }
 
-    /**
-     * @return
-     */
     public String name() {
-        // TODO implement here
-        return "";
+        return this.name;
     }
 
-    /**
-     * @return
-     */
     public Machine getMachine() {
-        // TODO implement here
-        return null;
+        return this.machine;
     }
 
-    /**
-     * @param m 
-     * @return
-     */
     public Worker distribute(Machine m) {
-        // TODO implement here
+        this.machine = m;
         return null;
     }
 
-    /**
-     * @return
-     */
-    public int raises NoMachine maked() {
-        // TODO implement here
-        return null;
+    public int maked() throws NoMachine{
+        return new NoMachine().id();
     }
 
-    /**
-     * @return
-     */
-    public Object raises NoMachine make() {
-        // TODO implement here
-        return null;
+    public Object make() throws NoMachine{
+        return new NoMachine();
     }
 
-    /**
-     * @return
-     */
     public String toString() {
-        // TODO implement here
-        return "";
+        return "Name: " + this.name + " id: " + this.id + " maked: " + this.maked+ " machine: " + this.machine;
     }
 
 }

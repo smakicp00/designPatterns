@@ -3,62 +3,26 @@ package workshop;
 import objects.Sphera;
 import objects.Object;
 
-/**
- * 
- */
 public class MachineSphera extends Machine {
 
-    /**
-     * Default constructor
-     */
-    public MachineSphera() {
-    }
-
-    /**
-     * 
-     */
     private double r;
 
-    /**
-     * @param spTez 
-     * @param r
-     */
+    public MachineSphera() {}
     public MachineSphera(double spTez, double r) {
-        // TODO implement here
+
     }
 
-    /**
-     * @return
-     */
     public double r() {
-        // TODO implement here
-        return 0.0d;
+        return this.r;
     }
 
-    /**
-     * @return
-     */
     public char type() {
-        // TODO implement here
-        return "0";
+        return 'S';
     }
 
-    /**
-     * @return
-     */
     public Sphera make() {
-        // TODO implement here
-        return null;
+
+        return new Sphera(this.spTez,this.r);
     }
-
-    /**
-     * @return
-     */
-    public abstract char type();
-
-    /**
-     * @return
-     */
-    public abstract Object make();
 
 }
