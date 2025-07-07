@@ -3,9 +3,6 @@ package workshop;
 import objects.Sphera;
 import objects.Object;
 
-import java.io.*;
-import java.util.*;
-
 /**
  * 
  */

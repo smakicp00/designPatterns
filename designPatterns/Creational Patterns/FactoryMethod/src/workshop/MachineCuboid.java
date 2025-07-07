@@ -1,23 +1,18 @@
-package objects;
+package workshop;
 
-import java.io.*;
-import java.util.*;
+import objects.Cuboid;
+import objects.Object;
 
 /**
  * 
  */
-public class Cuboid extends Object {
+public class MachineCuboid extends Machine {
 
     /**
      * Default constructor
      */
-    public Cuboid() {
+    public MachineCuboid() {
     }
-
-    /**
-     * 
-     */
-    public char VR;
 
     /**
      * 
@@ -27,7 +22,7 @@ public class Cuboid extends Object {
     /**
      * 
      */
-    private dobuble b;
+    private double b;
 
     /**
      * 
@@ -40,21 +35,38 @@ public class Cuboid extends Object {
      * @param b 
      * @param c
      */
-    public Cuboid(void spTez, double a, double b, double c) {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public Cuboid() {
+    public MachineCuboid(double spTez, double a, double b, double c) {
         // TODO implement here
     }
 
     /**
      * @return
      */
-    public char vr() {
+    public double a() {
+        // TODO implement here
+        return 0.0d;
+    }
+
+    /**
+     * @return
+     */
+    public double b() {
+        // TODO implement here
+        return 0.0d;
+    }
+
+    /**
+     * @return
+     */
+    public double c() {
+        // TODO implement here
+        return 0.0d;
+    }
+
+    /**
+     * @return
+     */
+    public char type() {
         // TODO implement here
         return "0";
     }
@@ -62,7 +74,7 @@ public class Cuboid extends Object {
     /**
      * @return
      */
-    public dobule V() {
+    public Cuboid make() {
         // TODO implement here
         return null;
     }
@@ -70,19 +82,11 @@ public class Cuboid extends Object {
     /**
      * @return
      */
-    public String toString() {
-        // TODO implement here
-        return "";
-    }
+    public abstract char type();
 
     /**
      * @return
      */
-    public abstract char vr();
-
-    /**
-     * @return
-     */
-    public abstract double V();
+    public abstract Object make();
 
 }

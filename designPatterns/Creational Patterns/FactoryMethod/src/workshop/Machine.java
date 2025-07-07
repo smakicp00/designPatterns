@@ -2,9 +2,6 @@ package workshop;
 
 import objects.Object;
 
-import java.io.*;
-import java.util.*;
-
 /**
  * 
  */
