@@ -1,56 +1,33 @@
 package workshop;
 
-/**
- * 
- */
 public class NoMachine extends Throwable {
 
-    /**
-     * Default constructor
-     */
-    public NoMachine() {
-    }
+    public NoMachine() {}
 
-    /**
-     * 
-     */
     private String name;
 
-    /**
-     * 
-     */
     private int id;
 
-    /**
-     * @param name 
-     * @param i
-     */
     public NoMachine(String name, int i) {
-        // TODO implement here
+        this.name = name;
+        this.id = i;
     }
 
-    /**
-     * @return
-     */
     public String name() {
-        // TODO implement here
-        return "";
+        return this.name;
     }
 
-    /**
-     * @return
-     */
     public int id() {
-        // TODO implement here
-        return 0;
+        return this.id;
     }
 
-    /**
-     * @return
-     */
     public String toString() {
-        // TODO implement here
-        return "";
+        if ( this.id == 1){
+            return "No machine";
+        } else if (this.id == 2) {
+            return "Machine not available";
+        }
+        return "Error";
     }
 
 }

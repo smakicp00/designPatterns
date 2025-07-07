@@ -35,11 +35,11 @@ public class Worker {
     }
 
     public int maked() throws NoMachine{
-        return new NoMachine().id();
+        return new NoMachine("NoMachine",1).id();
     }
 
     public Object make() throws NoMachine{
-        return new NoMachine();
+        return new NoMachine("Machine not available",2);
     }
 
     public String toString() {
